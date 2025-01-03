@@ -234,6 +234,7 @@
 .product-card {
   background-color: #fff;
   border-radius: 10px;
+  border: 1px solid #fff;
   width: calc(100% / 5 - 16px);
   aspect-ratio: 1 / 1.5;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
