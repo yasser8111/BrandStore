@@ -1,0 +1,298 @@
+{
+  "categories": [
+    {
+      "name": "لابتوبات",
+      "image": "../assets/img/products/laptop.jpg",
+      "link": "#"
+    },
+    {
+      "name": "هواتف",
+      "image": "../assets/img/products/phone.jpg",
+      "link": "#"
+    },
+    {
+      "name": "أجهزة تلفاز",
+      "image": "../assets/img/products/watch.jpg",
+      "link": "#"
+    },
+    {
+      "name": "كاميرات",
+      "image": "../assets/img/products/camera.jpg",
+      "link": "#"
+    },
+    {
+      "name": "كاميرات",
+      "image": "../assets/img/products/camera.jpg",
+      "link": "#"
+    },
+    {
+      "name": "كاميرات",
+      "image": "../assets/img/products/camera.jpg",
+      "link": "#"
+    },
+    {
+      "name": "كاميرات",
+      "image": "../assets/img/products/camera.jpg",
+      "link": "#"
+    },
+    {
+      "name": "كاميرات",
+      "image": "../assets/img/products/camera.jpg",
+      "link": "#"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "سامسونج جالكسي S22",
+      "description": "هاتف رائع مزود بميزات مذهلة، مصمم ليمنحك أداءً استثنائياً في جميع الاستخدامات اليومية وكذلك الألعاب. يجمع بين التصميم العصري والأداء العالي.",
+      "price": 2200,
+      "oldPrice": 2400,
+      "image": "../assets/img/products/phone.jpg",
+      "additionalImages": [
+        "../assets/img/products/phone.jpg",
+        "../assets/img/products/phone.jpg",
+        "../assets/img/products/phone.jpg"
+      ],
+      "currency": "YER",
+      "availability": true,
+      "colors": ["أزرق", "أسود", "فضي"],
+      "quantity": 50,
+      "specifications": {
+        "الشاشة": "6.1 إنش AMOLED",
+        "المعالج": "Exynos 2200",
+        "الذاكرة": "8GB RAM",
+        "التخزين": "128GB",
+        "الكاميرا": "50MP"
+      }
+    },
+    {
+      "id": 2,
+      "name": "كاميرا كانون",
+      "description": "كاميرا عالية الجودة لالتقاط أفضل اللحظات. تتميز بتقنيات متقدمة تتيح لك التقاط صور ومقاطع فيديو واضحة وحادة بألوان واقعية.",
+      "price": 3500,
+      "oldPrice": 4000,
+      "image": "../assets/img/products/camera.jpg",
+      "additionalImages": [
+        "../assets/img/products/camera.jpg",
+        "../assets/img/products/camera.jpg",
+        "../assets/img/products/camera.jpg"
+      ],
+      "currency": "SAR",
+      "availability": false,
+      "colors": ["أسود", "أبيض"],
+      "quantity": 0,
+      "specifications": {
+        "الدقة": "20.1 ميجابكسل",
+        "العدسة": "24-70mm",
+        "الشاشة": "شاشة LCD 3.2 إنش",
+        "الفلاش": "مدمج"
+      }
+    },
+    {
+      "id": 3,
+      "name": "سماعات رأس لاسلكية",
+      "description": "سماعات رأس لاسلكية توفر تجربة صوتية ممتازة مع راحة استثنائية. مثالية للاستخدام اليومي سواء كنت في المنزل أو أثناء التنقل.",
+      "price": 500,
+      "oldPrice": 600,
+      "image": "../assets/img/products/headphones.jpg",
+      "additionalImages": [
+        "../assets/img/products/headphones.jpg",
+        "../assets/img/products/headphones.jpg",
+        "../assets/img/products/headphones.jpg"
+      ],
+      "currency": "YER",
+      "availability": true,
+      "colors": ["أسود", "أبيض"],
+      "quantity": 100,
+      "specifications": {
+        "البطارية": "20 ساعة من التشغيل",
+        "الاتصال": "بلوتوث 5.0",
+        "التردد": "20Hz - 20kHz",
+        "الوزن": "250 جرام"
+      }
+    },
+    {
+      "id": 4,
+      "name": "لاب توب للألعاب",
+      "description": "حاسوب محمول قوي مخصص للألعاب والتطبيقات الثقيلة. يأتي مع معالج رسومات قوي وشاشة عالية الدقة توفر تجربة ألعاب استثنائية.",
+      "price": 5000,
+      "oldPrice": 5500,
+      "image": "../assets/img/products/laptop.jpg",
+      "additionalImages": [
+        "../assets/img/products/laptop.jpg",
+        "../assets/img/products/laptop.jpg",
+        "../assets/img/products/laptop.jpg"
+      ],
+      "currency": "SAR",
+      "availability": true,
+      "colors": ["أسود", "فضي"],
+      "quantity": 30,
+      "specifications": {
+        "الشاشة": "15.6 إنش FHD",
+        "المعالج": "Intel Core i7",
+        "الذاكرة": "16GB RAM",
+        "التخزين": "512GB SSD",
+        "بطاقة الرسومات": "NVIDIA RTX 3060"
+      }
+    },
+    {
+      "id": 5,
+      "name": "جهاز كمبيوتر مكتبي",
+      "description": "جهاز كمبيوتر مكتبي قوي يمكن استخدامه للعمل والترفيه. مع معالج عالي الأداء وذاكرة كبيرة لتلبية جميع احتياجاتك.",
+      "price": 2500,
+      "oldPrice": 2800,
+      "image": "../assets/img/products/pc.jpg",
+      "additionalImages": [
+        "../assets/img/products/pc.jpg",
+        "../assets/img/products/pc.jpg",
+        "../assets/img/products/pc.jpg"
+      ],
+      "currency": "YER",
+      "availability": true,
+      "colors": ["أسود"],
+      "quantity": 20,
+      "specifications": {
+        "المعالج": "Intel Core i5",
+        "الذاكرة": "8GB RAM",
+        "التخزين": "1TB HDD",
+        "البطاقة الرسومية": "Intel UHD"
+      }
+    },
+    {
+      "id": 6,
+      "name": "قلم ذكي",
+      "description": "قلم ذكي يأتي مع ميزات مبتكرة تساعدك على زيادة الإنتاجية والتفاعل مع الأجهزة الذكية بشكل أسهل وأسرع.",
+      "price": 100,
+      "oldPrice": 120,
+      "image": "../assets/img/products/pen.jpg",
+      "additionalImages": [
+        "../assets/img/products/pen.jpg",
+        "../assets/img/products/pen.jpg",
+        "../assets/img/products/pen.jpg"
+      ],
+      "currency": "SAR",
+      "availability": true,
+      "colors": ["أسود", "فضي"],
+      "quantity": 75,
+      "specifications": {
+        "الاتصال": "بلوتوث",
+        "البطارية": "قابلة لإعادة الشحن",
+        "الوزن": "15 جرام"
+      }
+    },
+    {
+      "id": 7,
+      "name": "ساعة ذكية",
+      "description": "ساعة ذكية تساعدك على متابعة حالتك الصحية بشكل مستمر مع مزايا رائعة لتتبع النشاطات الرياضية والتمارين.",
+      "price": 800,
+      "oldPrice": 900,
+      "image": "../assets/img/products/smart-watch.jpg",
+      "additionalImages": [
+        "../assets/img/products/smart-watch.jpg",
+        "../assets/img/products/smart-watch.jpg",
+        "../assets/img/products/smart-watch.jpg"
+      ],
+      "currency": "YER",
+      "availability": true,
+      "colors": ["أسود", "أزرق", "فضي"],
+      "quantity": 60,
+      "specifications": {
+        "الشاشة": "1.4 إنش AMOLED",
+        "البطارية": "48 ساعة",
+        "الاتصال": "بلوتوث 5.0",
+        "الوظائف": "قياس معدل ضربات القلب، تتبع النوم، تتبع النشاط الرياضي"
+      }
+    },
+    {
+      "id": 8,
+      "name": "ساعة فاخرة",
+      "description": "ساعة فاخرة ذات تصميم كلاسيكي راقٍ، تجمع بين الأناقة والوظائف العملية. تناسب جميع المناسبات وتعكس ذوقك الرفيع.",
+      "price": 1200,
+      "oldPrice": 1500,
+      "image": "../assets/img/products/watch.jpg",
+      "additionalImages": [
+        "../assets/img/products/watch.jpg",
+        "../assets/img/products/watch.jpg",
+        "../assets/img/products/watch.jpg"
+      ],
+      "currency": "SAR",
+      "availability": true,
+      "colors": ["ذهبي", "فضي"],
+      "quantity": 40,
+      "specifications": {
+        "الوزن": "150 جرام",
+        "المادة": "ستانلس ستيل",
+        "الحركة": "ميكانيكية"
+      }
+    },
+    {
+      "id": 9,
+      "name": "هاتف جالكسي",
+      "description": "هاتف جالكسي متطور، يقدم أداءً استثنائياً للاستخدام اليومي وكذلك الألعاب. يتميز بتصميم عصري وشاشة عالية الدقة لمشاهدة واضحة.",
+      "price": 2700,
+      "oldPrice": 3000,
+      "image": "../assets/img/products/galaxy-phone.jpg",
+      "additionalImages": [
+        "../assets/img/products/galaxy-phone.jpg",
+        "../assets/img/products/galaxy-phone.jpg",
+        "../assets/img/products/galaxy-phone.jpg"
+      ],
+      "currency": "SAR",
+      "availability": true,
+      "colors": ["أسود", "أزرق", "أبيض"],
+      "quantity": 150,
+      "specifications": {
+        "الشاشة": "6.5 إنش Super AMOLED",
+        "المعالج": "Qualcomm Snapdragon 888",
+        "الذاكرة": "8GB RAM",
+        "التخزين": "128GB"
+      }
+    },
+    {
+      "id": 10,
+      "name": "جهاز كمبيوتر للألعاب",
+      "description": "كمبيوتر مخصص للألعاب يقدم أداءً قوياً ومرونة عالية لتشغيل الألعاب الثقيلة بأعلى إعدادات. مع مكونات حديثة توفر لك تجربة لعب مثالية.",
+      "price": 7000,
+      "oldPrice": 7500,
+      "image": "../assets/img/products/gaming-pc.jpg",
+      "additionalImages": [
+        "../assets/img/products/gaming-pc.jpg",
+        "../assets/img/products/gaming-pc.jpg",
+        "../assets/img/products/gaming-pc.jpg"
+      ],
+      "currency": "YER",
+      "availability": true,
+      "colors": ["أسود", "أزرق"],
+      "quantity": 15,
+      "specifications": {
+        "المعالج": "Intel Core i9",
+        "الذاكرة": "32GB RAM",
+        "التخزين": "1TB SSD",
+        "بطاقة الرسومات": "NVIDIA RTX 3080"
+      }
+    },
+    {
+      "id": 11,
+      "name": "ماوس",
+      "description": "ماوس مميز بأداء سريع ودقة عالية، مصمم للاستخدام اليومي والألعاب. يتمتع بتصميم مريح يناسب الاستخدام لفترات طويلة.",
+      "price": 1500,
+      "oldPrice": 1700,
+      "image": "../assets/img/products/mouse.jpg",
+      "additionalImages": [
+        "../assets/img/products/mouse.jpg",
+        "../assets/img/products/mouse.jpg",
+        "../assets/img/products/mouse.jpg"
+      ],
+      "currency": "SAR",
+      "availability": true,
+      "colors": ["أسود", "أبيض"],
+      "quantity": 120,
+      "specifications": {
+        "الحساس": "5000 DPI",
+        "الاتصال": "سلكي",
+        "الوزن": "80 جرام"
+      }
+    }
+  ]
+}

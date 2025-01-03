@@ -1,0 +1,468 @@
+/* hero ==================================================== */
+
+.hero {
+  background-image: url("../../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero .content {
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  white-space: nowrap;
+}
+
+.hero a {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  background-color: var(--shade-4);
+}
+
+@media (max-width: 1200px) {
+  .hero .content {
+    padding: 25px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .content {
+    padding: 30px;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .content {
+    padding: 30px;
+    border-radius: 5px;
+  }
+
+  .hero h2 {
+    font-size: 0.9rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 320px) {
+  .hero .content {
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 0.7rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .hero p {
+    font-size: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+}
+
+/* categories ================================================ */
+
+.categories .title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  color: var(--main-color);
+}
+
+.swiper-category {
+  position: relative;
+  padding: 10px 0;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  transition: 0.5s ease;
+  flex: 0 0 auto;
+}
+
+.category-card {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.category-name {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.2s ease;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.category-card:hover .category-name {
+  opacity: 0;
+}
+
+@media (max-width: 1200px) {
+  .category-name {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-name {
+    font-size: 0.9rem;
+  }
+  .swiper-category {
+    padding: 0;
+    margin: 0 5px;
+  }
+}
+
+/* products ================================================= */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: calc(100% / 5 - 16px);
+  aspect-ratio: 1 / 1.5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product-card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card .details {
+  text-align: center;
+  padding: 10px;
+  direction: rtl;
+}
+
+.product-card .details .product-name {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+
+.product-card .details .product-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4rem;
+  height: 2.8rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.product-card .details .price-container {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.product-card .details .price-container .old-price {
+  color: #aaa;
+  font-size: 1rem;
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.product-card .product-actions {
+  padding: 5px;
+  gap: 5px;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.product-card .product-actions .buy-now,
+.product-card .product-actions .add-to-cart {
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  transition: 0.1s ease;
+  padding: 5px;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.product-card .product-actions .buy-now:hover,
+.product-card .product-actions .add-to-cart:hover {
+  background: var(--shade-4);
+}
+
+.product-card .product-actions .add-to-cart {
+  width: 40px;
+}
+
+.product-card .product-actions .buy-now {
+  width: 80%;
+}
+
+@media (max-width: 1200px) {
+  .product-card {
+    width: calc(100% / 5 - 10px);
+    aspect-ratio: 1 / 1.5;
+  }
+  .products {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .product-card {
+    width: calc(100% / 3 - 10px);
+    aspect-ratio: 1 / 1.5;
+  }
+  .products {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .products {
+    gap: 5px;
+  }
+
+  .product-card {
+    width: calc(100% / 2 - 5px);
+    aspect-ratio: 1 / 1.5;
+  }
+
+  .product-card .details .product-name {
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .product-card .details .product-description {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    height: 2.5rem;
+  }
+
+  .product-card .details .price-container {
+    font-size: 1rem;
+    gap: 7px;
+    margin-top: 6px;
+  }
+
+  .product-card .product-actions .buy-now,
+  .product-card .product-actions .add-to-cart {
+    font-size: 0.75rem;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 425px) {
+  .product-card {
+    width: calc(100% / 2 - 5px);
+    aspect-ratio: 1 / 1.5;
+  }
+
+  .product-card .details .product-name {
+    font-size: 0.9rem;
+  }
+
+  .product-card .details .product-description {
+    font-size: 0.8rem;
+    height: 2.3rem;
+  }
+
+  .product-card .details .price-container {
+    font-size: 1.1rem;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .product-card .product-actions .buy-now,
+  .product-card .product-actions .add-to-cart {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .product-card .details .product-name {
+    font-size: 0.85rem;
+  }
+
+  .product-card .details .product-description {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    height: 1.6rem;
+  }
+
+  .product-card .details .price-container {
+    gap: 6px;
+    margin-top: 2px;
+  }
+
+  .product-card .product-actions .buy-now,
+  .product-card .product-actions .add-to-cart {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .product-card .details .product-name {
+    font-size: 0.8rem;
+  }
+
+  .product-card .details .product-description {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    height: 2rem;
+  }
+
+  .product-card .details .price-container {
+    font-size: 0.9rem;
+    gap: 5px;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,318 @@
+/* الأساسيات العامة */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
+
+* {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #ff6600;
+  --shade-1: #e15215e8;
+  --shade-2: #352b2b;
+  --shade-3: #ffefc7;
+  --shade-4: #ffae34;
+  --color-white: #fff;
+  --color-gray: #333;
+  --text-color-light: #fff;
+  --text-color-dark: #000;
+}
+
+body {
+  color: var(--color-gray);
+  height: 100vw;
+  overflow-x: hidden; /* يمنع التمرير الأفقي */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* header =============================== */
+
+header {
+  height: 50px;
+  background: var(--main-color);
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.Logo {
+  transition: 0.1s ease;
+}
+
+.Logo img {
+  width: 50px;
+  border: none;
+  outline: none;
+}
+
+.search-bar {
+  width: 30%;
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.search-bar input {
+  width: calc(100% - 30px);
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+}
+
+.search-bar button {
+  font-size: 1rem;
+  width: 40px;
+  border: 2px solid #fff;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.search-bar button:hover {
+  background: var(--shade-4);
+}
+
+.links-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.links-menu li {
+  text-align: center;
+  margin: 0;
+  width: 80px;
+}
+
+.links-menu li a {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.links-menu li a:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: var(--main-color);
+}
+
+.burger-btn i {
+  font-size: 1.2rem;
+}
+
+.burger-links {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 45px;
+  right: 0;
+  transform: translateX(100%);
+  background: var(--main-color);
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+  z-index: -1;
+  border-bottom-left-radius: 10px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0, 1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.burger-links.active {
+  transform: translateX(0);
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger-links li {
+  text-align: center;
+  margin: 0;
+}
+
+.burger-links li a {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.burger-links li a:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+@media (max-width: 1200px) {
+  .search-bar {
+    width: 50%;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .links-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    width: 100%;
+    margin-inline: 20px;
+  }
+
+  .burger-links {
+    width: 100%;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    transform: translateX(0);
+    transform: translateY(-120%);
+  }
+
+  .burger-links.active {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    height: 40px;
+    padding: 5px;
+  }
+
+  header .container {
+    height: 40px;
+  }
+
+  .Logo img {
+    width: 40px;
+  }
+
+  .search-bar {
+    margin-inline: 10px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .search-bar input {
+    width: calc(100% - 30px);
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .search-bar button {
+    font-size: .8rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .burger-btn {
+    font-size: .8rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .burger-btn i {
+    font-size: 1rem;
+  }
+  
+  .burger-links {
+    top: 40px;
+    padding: 10px;
+    z-index: -1;
+    gap: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+/*
+
+320px: الهواتف الصغيرة جدًا مثل iPhone 5 و SE.
+480px: الهواتف الصغيرة مثل Galaxy S4 و iPhone 6.
+576px: الهواتف المتوسطة الحجم.
+768px: الهواتف الكبيرة وبعض التابلت الصغيرة مثل iPad Mini.
+992px: الأجهزة اللوحية المتوسطة مثل iPad القياسي.
+1200px: الأجهزة اللوحية الكبيرة أو شاشات الكمبيوتر المحمولة.
+1400px: الشاشات الكبيرة لأجهزة الكمبيوتر المكتبية. 
+
+
+425px 
+375px 
+320px
+
+*/
